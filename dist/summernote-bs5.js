@@ -305,7 +305,7 @@ function isFontInstalled(fontName) {
   var canvasWidth = 40;
   var canvasHeight = 20;
   var canvas = document.createElement("canvas");
-  var context = canvas.getContext("2d");
+  var context = canvas.getContext("2d", { willReadFrequently: true });
   canvas.width = canvasWidth;
   canvas.height = canvasHeight; // Center display
 

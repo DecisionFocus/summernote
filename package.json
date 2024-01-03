@@ -1,7 +1,7 @@
 {
   "name": "summernote",
   "description": "Super simple WYSIWYG editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "keywords": [
     "editor",
@@ -16,8 +16,8 @@
     "email": "<susukang98@gmail.com>"
   },
   "main": "dist/summernote.js",
-  "engines" : { 
-    "node" : ">=17.0.0" 
+  "engines": {
+    "node": ">=17.0.0"
   },
   "scripts": {
     "dev": "eslint config && webpack serve --config=./config/webpack.development.js --progress",

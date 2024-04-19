@@ -45,8 +45,12 @@ const dropdown = renderer.create('<div class="note-dropdown-menu dropdown-menu" 
   }
 });
 
-const dropdownButtonContents = function(contents) {
-  return contents;
+const dropdownButtonContents = function(contents, options) {
+  if (options) {
+    return contents + ' ' + icon(options.icons.caret, 'span');
+  } else {
+    return contents;
+  }
 };
 
 const dropdownCheck = renderer.create('<div class="note-dropdown-menu dropdown-menu note-check" role="list">', function($node, options) {
